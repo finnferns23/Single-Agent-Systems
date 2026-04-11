@@ -1,0 +1,11 @@
+python-dotenv
+langgraph
+langchain-core
+langchain-openai
+langchain-community
+langchain-chroma
+langchain-text-splitters
+chromadb
+pypdf
+tiktoken
+typing_extensions
