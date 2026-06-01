@@ -4,6 +4,7 @@ openai
 langchain
 langchain-core
 langchain-community
+langchain-text-splitters
 langchain-openai
 python-dotenv
 python-docx

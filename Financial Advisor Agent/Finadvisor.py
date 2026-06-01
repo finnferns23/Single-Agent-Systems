@@ -11,6 +11,7 @@ import logging
 
 # === CONFIG ===
 load_dotenv()
+
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 ALPHA_VANTAGE_API_KEY = os.getenv("ALPHA_VANTAGE_API_KEY")
 
@@ -32,7 +33,10 @@ class FinanceState(TypedDict):
     hitl_flag: Optional[bool]  # Flag for high-risk queries
 
 # === LLM ===
-llm = ChatGroq(groq_api_key=GROQ_API_KEY, model_name="llama-3.3-70b-versatile")
+llm = ChatGroq(
+    groq_api_key=GROQ_API_KEY,
+    model_name="llama-3.3-70b-versatile"
+)
 
 # === USER PROFILE COLLECTION ===
 async def collect_user_data(state: FinanceState) -> FinanceState:
